@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFf-qw-kAx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oJI-dz-y6B"/>
+                                    <constraint firstAttribute="width" constant="94" id="uF8-nN-SwS"/>
+                                </constraints>
+                                <state key="normal" title="Connect"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oJI-dz-y6B"/>
+                                        <exclude reference="uF8-nN-SwS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="oJI-dz-y6B"/>
+                                        <include reference="uF8-nN-SwS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="StartscanbuttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46r-S6-hap"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-na-NCH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ata-W7-MGs"/>
+                                    <constraint firstAttribute="width" constant="94" id="kvs-eR-Yj6"/>
+                                </constraints>
+                                <state key="normal" title="Disconnect"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ata-W7-MGs"/>
+                                        <exclude reference="kvs-eR-Yj6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ata-W7-MGs"/>
+                                        <include reference="kvs-eR-Yj6"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="disConnectButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXD-L6-sFb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status : Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZx-ws-4lv">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EFc-TB-6PY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EFc-TB-6PY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="EFc-TB-6PY"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xp7-na-NCH" firstAttribute="top" secondItem="nFf-qw-kAx" secondAttribute="bottom" constant="36" id="6Wt-et-9P3"/>
+                            <constraint firstAttribute="trailing" secondItem="TZx-ws-4lv" secondAttribute="trailing" id="KuB-3E-Mhp"/>
+                            <constraint firstItem="xp7-na-NCH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QFy-lX-a00"/>
+                            <constraint firstItem="nFf-qw-kAx" firstAttribute="top" secondItem="TZx-ws-4lv" secondAttribute="bottom" constant="30" id="d44-bg-38p"/>
+                            <constraint firstItem="nFf-qw-kAx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="144" id="laR-Qq-JlM"/>
+                            <constraint firstItem="TZx-ws-4lv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tVV-hH-aU9"/>
+                            <constraint firstItem="nFf-qw-kAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uv4-uZ-BDa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nFf-qw-kAx"/>
+                                <exclude reference="xp7-na-NCH"/>
+                                <exclude reference="TZx-ws-4lv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="KuB-3E-Mhp"/>
+                                <exclude reference="tVV-hH-aU9"/>
+                                <exclude reference="d44-bg-38p"/>
+                                <exclude reference="laR-Qq-JlM"/>
+                                <exclude reference="uv4-uZ-BDa"/>
+                                <exclude reference="6Wt-et-9P3"/>
+                                <exclude reference="QFy-lX-a00"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nFf-qw-kAx"/>
+                                <include reference="xp7-na-NCH"/>
+                                <include reference="TZx-ws-4lv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="KuB-3E-Mhp"/>
+                                <include reference="tVV-hH-aU9"/>
+                                <include reference="d44-bg-38p"/>
+                                <include reference="laR-Qq-JlM"/>
+                                <include reference="uv4-uZ-BDa"/>
+                                <include reference="6Wt-et-9P3"/>
+                                <include reference="QFy-lX-a00"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="peripheralStatusLabel" destination="TZx-ws-4lv" id="iU5-X7-qMp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409.5" y="180"/>
+        </scene>
+    </scenes>
+</document>
